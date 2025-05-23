@@ -1,0 +1,154 @@
+/* Updated CSS with enhanced interactivity and layout */
+
+body {
+    font-family: 'Comic Neue', cursive;
+    background: #f0f9ff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%);
+    color: white;
+    padding: 3rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    animation: riseSun 2s ease-out forwards;
+}
+
+header p, header h1 {
+    max-width: 500px;
+}
+
+@keyframes riseSun {
+    0% {
+        transform: translateY(100px) scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px) scale(1);
+        opacity: 1;
+    }
+}
+
+a {
+    color: #facc15;
+    text-decoration: none;
+}
+
+.projects {
+    padding: 2rem;
+}
+
+.project {
+    background: #fdf7ff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e4d6ff;
+}
+
+.project:hover {
+    transform: scale(1.03);
+    background-color: #f3e8ff;
+    box-shadow: 0 6px 20px rgba(132, 59, 255, 0.25);
+}
+
+.project-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 16px;
+    background-color: #8b5cf6;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.project-button:hover {
+    background-color: #6d28d9;
+}
+
+/* ==== SKILLS SECTION ==== */
+.skills-section {
+    background: #fff7ed;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+.skills-section h2 {
+    background-color: #f97316;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+.skills-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease;
+    padding: 0 1rem;
+    margin-top: 1rem;
+}
+
+/* ==== AWARDS SECTION ==== */
+.awards-section {
+    background: #f0f9ff;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+.awards-section h2 {
+    background-color: #0ea5e9;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+.awards-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease;
+    padding: 0 1rem;
+    margin-top: 1rem;
+}
+
+.icon-toggle {
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+footer {
+    background-color: #f3f4f6;
+    padding: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}

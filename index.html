@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nadup Prasai - Fun Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+   <!-- ...rest of the head unchanged -->
+   <body>
+    <header>
+        <h1>👋 Hello, I'm Nadup Prasai!</h1>
+        <div class="profile-container">
+            <img src="profile.jpg" alt="Nadup's Profile Picture" class="profile-pic">
+            <div class="intro-text">
+                🌟 Hello there, I am from Kathmandu and studying in 
+                <a href="https://kaasthamandap.edu.np/" target="_blank">Kaasthamandap Vidhyalaya</a>. 
+                I love playing football, guitar, learning new languages, problem solving and coding. 
+                For coding, I took a course on 
+                <a href="https://skilltootr.com/" target="_blank">Skilltootr</a> and my instructor was 
+                <a href="https://timsinaanup.github.io/portfolio/" target="_blank">Anup Timsina</a>. 
+                I acquired skills like programming with JavaScript and Python, and can do both block-based 
+                and text-based programming. I’ve built various projects which you can explore below.
+            </div>
+        </div>
+    </header>
+
+
+    <section class="projects">
+        <h2>🎨 My Projects</h2>
+        <h3>🛠️ Completed Projects:</h3>
+
+        <div class="project">
+        <strong>🌟 Join the Adventure with Our Jumping Monkey! 🌟</strong>
+        <p>🕹️ Control a cheeky monkey 🐒 as he leaps over pesky bananas 🍌 using the spacebar! Avoid the bananas to score points and challenge yourself to beat your high score! Can you become the ultimate banana-jumping champion? Let’s find out! 🚀</p>
+        <a href="#" target="_blank" class="project-button">🚀 View Project</a>
+        </div>
+
+        <div class="project">
+        <strong>🧮 Your Handy Calculator! 🧮</strong>
+        <p>🧮 This functional calculator, built with HTML, CSS, and JavaScript, lets you easily perform basic arithmetic operations. With its sleek design, crunching numbers has never been easier! 💡</p>
+        <a href="#" target="_blank" class="project-button">🚀 View Project</a>
+        </div>
+
+        <div class="project">
+        <strong>🏦 Banking System Simulation</strong>
+        <p>💳 Step into the World of Banking! 💳<br>
+            Experience the thrill of being a software engineer with this Banking System Simulation! Create your own account, deposit funds, withdraw cash, and check your balance anytime. This project mimics real-world banking operations.
+        </p>
+        <a href="#" target="_blank" class="project-button">🚀 View Project</a>
+        </div>
+
+        <div class="project">
+        <strong>🔢 Number Guessing Game</strong>
+        <p>🧠 Try to guess the correct number in this fun guessing game! Improve your logic and stay sharp while having fun.</p>
+        <a href="#" target="_blank" class="project-button">🚀 View Project</a>
+        </div>
+    </section>
+
+    <section class="skills-section">
+        <h2 onclick="toggleSection('skills-content')">📚 Learned Skills <span class="icon-toggle">🔽</span></h2>
+        <div id="skills-content" class="skills-content">
+        <p><strong>Completed: Basic Coding:</strong><br><br>
+            🌟 Scratch: <br>Developed interactive games and animations.<br>
+            🌟 JavaScript: <br>Created dynamic web applications.<br>
+            🌟 HTML & CSS: <br>Built user-friendly web pages with stylish designs.<br>
+            🌟 Programming Concepts: <br>Gained a solid understanding of loops, conditions, variables, and operators.<br>
+        </p>
+        <p><strong>Completed: Advanced Coding:</strong><br>
+            - 🗂️ Lists: Storing and managing collections of data.<br>
+            - 📚 Dictionaries: Utilizing key-value pairs for efficient data retrieval.<br>
+            - 🧮 Arrays: Handling fixed-size sequences of elements in Python.<br>
+        </p>
+        </div>
+    </section>
+
+    <section class="awards-section">
+        <h2 onclick="toggleSection('awards-content')">🏆 Achievements and Awards <span class="icon-toggle">🔽</span></h2>
+        <div id="awards-content" class="awards-content">
+        <ul> 
+            <li>🏅 Gold Medal on Football ⚽ Competition</li>
+            <li>🏅 Participated in 50 meter race 🏃‍♂️ and got recognition</li>
+            <li>🏅 Certified 3DI student 🧑‍💻</li>
+        </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>👨‍🏫 Instructor: Anup Timsina (SkillTootr | Coding for kids)</p>
+    </footer>
+
+    <script>
+        function toggleSection(id) {
+        const content = document.getElementById(id);
+        const icon = content.previousElementSibling.querySelector('.icon-toggle');
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+            icon.textContent = '🔽';
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            icon.textContent = '🔼';
+        }
+        }
+    </script>
+</body>
+</html>
